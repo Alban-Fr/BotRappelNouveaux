@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 const Client = new Discord.Client;
 
-const token = "ODIyNTEyNjgxMTkzNzAxNDM2.YFTWoA.AMEe2hktdqdoepg_g-4wWpLPye0";
+const token = process.env.token;
 
 Client.on("ready", () => 
 {
@@ -16,6 +16,4 @@ Client.on("message", message =>{
     }
 });
 
-Client.login("ODIyNTEyNjgxMTkzNzAxNDM2.YFTWoA.AMEe2hktdqdoepg_g-4wWpLPye0");
-Client.login(process.env.token);
 
