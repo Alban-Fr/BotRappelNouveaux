@@ -16,5 +16,5 @@ Client.on("message", message =>{
 
 Client.login("ODIyNTEyNjgxMTkzNzAxNDM2.YFTWoA.AMEe2hktdqdoepg_g-4wWpLPye0");
 
-
+Client.login(process.env.TOKEN);
 
