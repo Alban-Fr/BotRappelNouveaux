@@ -10,9 +10,12 @@ Client.on("ready", () =>
 });
 
 Client.on("message", message =>{
-    if (!message.member.roles.cache.some(role => role.name === "Brawler") && !message.author.bot) 
+    if (!message.author.bot)
+    {    
+    if (!message.member.roles.cache.some(role => role.name === "Brawler")) 
     {
         message.reply("Salut ! Peux tu mettre ton role dans <#750781221264424960>");
+    }
     }
 });
 
