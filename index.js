@@ -7,6 +7,8 @@ const token = process.env.token;
 Client.on("ready", () => 
 {
     console.log("Bot opérationnel");
+    Client.user.setStatus("Développeur du bot : Alban");
+    Client.user.setActivity("Traque les membres qui n'ont pas leur rôle");
 });
 
 Client.on("message", message =>{
