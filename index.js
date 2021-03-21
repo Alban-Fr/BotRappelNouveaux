@@ -21,7 +21,7 @@ Client.on("message", message =>{
     ||!message.member.roles.cache.some(role => role.name === "🐼 ▪ BS Esport Elite") || !message.member.roles.cache.some(role => role.name === "🌴 ▪ Visiteur")
     ||!message.member.roles.cache.some(role => role.name === "🐮 ▪ BS Esport Pro"))
     {
-        message.reply("Salut ! Peux tu mettre ton role dans <#750781221264424960> ? Si tu fais partie d'un des clubs de la team ( liste dans <#740963471251734600> ), coche le rôle approprié. Si tu n'en fais pas partie, coche \"visiteur\". Merci :)");
+        message.reply("Salut ! Peux tu mettre ton role dans <#708245853588029471> ? Si tu fais partie d'un des clubs de la team ( liste dans <#740963471251734600> ), coche le rôle approprié. Si tu n'en fais pas partie, coche \"visiteur\". Merci :)");
     }
     }
 });
