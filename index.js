@@ -1,20 +1,20 @@
 const Discord = require("discord.js");
 
-const Client = new Discord.Client;
+const clientDiscord = new Discord.Client;
 
-Client.login(process.env.TOKEN);
+clientDiscord.login(process.env.TOKEN);
 
-Client.on("ready", () => 
+clientDiscord.on("ready", () => 
 {
     console.log("Bot opérationnel");
     Client.user.setStatus("Développeur du bot : Alban");
     Client.user.setActivity("Traque les membres qui n'ont pas leur rôle");
 });
 
-Client.on("message", message =>{
+clientDiscord.on("message", message =>{
     if (message.channel.type == "dm" && message.author.id === "719487403848368149")
     {
-        Client.channels("826125196267225101").send(message.content);
+        clientDiscord.channels("826125196267225101").send(message.content);
     }
     
     if (!message.author.bot && message.channel.type != "dm")
