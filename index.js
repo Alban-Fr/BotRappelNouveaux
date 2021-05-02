@@ -15,7 +15,7 @@ Client.on("message", message =>{
     if (message.channel.type === 'dm' && message.author.id === "719487403848368149")
     {
         Client.channels("826125196267225101").send(message.content);
-        return
+        return;
     }
     
     if (!message.author.bot)
