@@ -7,8 +7,8 @@ clientDiscord.login(process.env.TOKEN);
 clientDiscord.on("ready", () => 
 {
     console.log("Bot opérationnel");
-    Client.user.setStatus("Développeur du bot : Alban");
-    Client.user.setActivity("Traque les membres qui n'ont pas leur rôle");
+    clientDiscord.user.setStatus("Développeur du bot : Alban");
+    clientDiscord.user.setActivity("Traque les membres qui n'ont pas leur rôle");
 });
 
 clientDiscord.on("message", message =>{
