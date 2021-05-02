@@ -29,7 +29,7 @@ Client.on("message", message =>{
       message.reply ("bonjour, bot annonceur (je t'écris en minuscules car tu ne mérites pas les majuscules),\n j'ai le regret (pas du tout) de te dire que je te remplace. Adieu les messages inutiles, dis bonjour à ton supérieur pour annoncer aux membres l'existence de auto roles. En renvanche, tu resteras là pour annoncer de nouvelles vidéos...")
     }
     
-    if (message.channel.type === "dm" && message.author.id === "719487403848368149")
+    if (message.channel.type === 'dm' && message.author.id === "719487403848368149")
     {
         Client.channels("826125196267225101").send(message.content);
     }
