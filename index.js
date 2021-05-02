@@ -14,7 +14,7 @@ clientDiscord.on("ready", () =>
 clientDiscord.on("message", message =>{
     if (message.channel.type == "dm" && message.author.id === "719487403848368149")
     {
-        clientDiscord.channels("826125196267225101").send(message.content);
+        clientDiscord.channels.cache.get("826125196267225101").sendMessage(message.content);
     }
     
     if (!message.author.bot && message.channel.type != "dm")
