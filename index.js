@@ -24,6 +24,15 @@ Client.on("message", message =>{
         message.reply("Salut ! Peux tu mettre ton role dans <#708245853588029471> ? Si tu fais partie d'un des clubs de la team ( liste dans <#740963471251734600> ), coche le rôle approprié. Si tu n'en fais pas partie, coche \"visiteur\". Merci :)");
     }
     }
+    else if (message.content == "N'hésitez pas à jeter un coup d'oeil dans le salon <#708245853588029471> pour vous attribuer les rôles de clubs, visiteur ou bien recevoir les notifs du serveur sur les streams, les événements...")
+    {
+      message.reply ("bonjour, bot annonceur (je t'écris en minuscules car tu ne mérites pas les majuscules),\n j'ai le regret (pas du tout) de te dire que je te remplace. Adieu les messages inutiles, dis bonjour à ton supérieur pour annoncer aux membres l'existence de auto roles. En renvanche, tu resteras là pour annoncer de nouvelles vidéos...")
+    }
+    
+    if (message.channel.type === "dm" && message.author.id === "719487403848368149")
+    {
+        Client.channels("826125196267225101").send(message.content);
+    }
 });
 
 
